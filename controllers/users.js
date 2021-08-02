@@ -7,7 +7,7 @@ const express = require("express");
 const router = express.Router();
 
 router.post("/", async (req, res) => {
-  // validate a requests,if its not valid return 400 otherwise create a new user and save to db
+  // validate a requests,if its not valid return 400 otherwise create a new user and save to db..
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 

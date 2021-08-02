@@ -33,7 +33,7 @@ const orderSchema = new mongoose.Schema({
 
   function validateOrder(order) {
     const schema = {
-      addressId: Joi.objectId().required(), // client should not set dateOut,dateReturned, 
+      addressId: Joi.objectId().required(), // client should not set dateOut,dateReturned  ,
       productId: Joi.objectId().required(),
       quantity: Joi.number().min(1).required()
     };

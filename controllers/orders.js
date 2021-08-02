@@ -53,7 +53,7 @@ router.post("/", [auth, adminForOrders], async (req, res) => {
 
   // Transaction implementation using Fawn library
   try {
-      new Fawn.Task() // new task initialized, all will be treated as one unit, in case of errors rollback
+      new Fawn.Task() // new task initialized, all will be treated as one unit,      in case of errors rollback.
       .save("orders", order)
       .update(
         "products",

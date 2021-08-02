@@ -44,7 +44,7 @@ function validateAddress(address) {
       };
     })
   };
-  return Joi.validate(address, schema); // change the type
+  return Joi.validate(address, schema); // change the type..
 }
 
 exports.addressSchema = addressSchema;

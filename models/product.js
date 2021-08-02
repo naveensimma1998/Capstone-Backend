@@ -47,7 +47,7 @@ function validateProductGet(product) {
     direction: Joi.any().valid('ASC','DESC').default('DESC'),
     sortBy: Joi.string().default('productId'),
   };
-  return Joi.validate(product, schema); // change the type
+  return Joi.validate(product, schema); // change the type..
 }
 
 exports.Product = Product; 

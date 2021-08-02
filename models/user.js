@@ -6,6 +6,7 @@ mongoose.set("useNewUrlParser", true);
 mongoose.set("useUnifiedTopology", true);
 
 const userSchema = new mongoose.Schema(
+  
   {
     password: {
       type: String,

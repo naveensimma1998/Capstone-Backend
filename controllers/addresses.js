@@ -2,6 +2,7 @@ const auth = require("../middleware/auth");
 const { Address, validateAddress } = require("../models/address");
 const { User, validate } = require("../models/user");
 const mongoose = require("mongoose");
+
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useUnifiedTopology", true);
 
@@ -28,6 +29,9 @@ router.post("/",auth, async (req, res) => {
     user: user,
   });
   address = await address.save();
+
+
+
  res.send(address);
 });
 

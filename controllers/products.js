@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
   const { error } = validateProductGet(req.query);
   if (error) return res.status(400).send(error.details[0].message);
 
-  // if no query is passed as part of url then default values will be taken
+  // if no query is passed as part of url then default values will be taken...
   if(!req.query.category && !req.query.name){
     let products = await Product.find().sort('-_id');
     res.send(products);

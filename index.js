@@ -19,7 +19,7 @@ app.use(cors(corsOptions));
 
 if (!config.get("jwtPrivateKey")) {
   console.error("FATAL ERROR: jwtPrivateKey is not defined");
-  process.exit(1); // 0 means success anything else means failure, so if jwtPrivateKey is not set we get error and process exit.
+  process.exit(1); // 0 means success anything else means failure, so if jwtPrivateKey is not set we get error and process exit...
 }
 
 
